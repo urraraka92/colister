@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a35">
+  <meta name="description" content="Colivrer : maison, mangas, musique, jeux et high-tech.">
+  <title>Colivrer — Votre boutique en ligne</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="announcement">
+    ✦ Les petits plaisirs du quotidien, réunis au même endroit
+    <span class="announcement-right">Livraison offerte dès 50 € →</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Accueil Colivrer">
+      <span class="brand-mark">c.</span>
+      <span>coli<span class="brand-accent">vrer</span>
+        <small>LE SHOPPING, AUTREMENT</small>
+      </span>
+    </a>
+
+    <form class="search-bar" id="searchForm" role="search">
+      <span class="search-icon">⌕</span>
+      <input id="searchInput" type="search"
+        placeholder="Que recherchez-vous aujourd’hui ?"
+        aria-label="Rechercher un produit">
+      <button type="submit">Rechercher</button>
+    </form>
+
+    <div class="header-tools">
+      <button class="tool-button" id="accountButton" type="button">
+        <span class="tool-icon">♙</span>
+        <span><small>Bonjour !</small><strong>Mon compte</strong></span>
+      </button>
+      <button class="tool-button" id="openCart" type="button">
+        <span class="cart-icon-wrap">🛒<b class="cart-count" id="cartCount">0</b></span>
+        <span><small>Votre sélection</small><strong>Mon panier</strong></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Navigation principale">
+    <a class="nav-all" href="#catalogue">☰ Toutes les catégories</a>
+    <a href="#catalogue" data-nav="Maison">Maison & ménage</a>
+    <a href="#catalogue" data-nav="Manga">Mangas</a>
+    <a href="#catalogue" data-nav="Tech">High-tech</a>
+    <a href="#catalogue" data-nav="Accessoires">Accessoires</a>
+    <a href="#catalogue" data-nav="Musique">Instruments</a>
+    <a href="#catalogue" data-nav="Jouets">LEGO & construction</a>
+    <a href="#catalogue" data-nav="Informatique">Ordinateurs</a>
+    <a href="#catalogue" data-nav="Mobilier">Armoires & mobilier</a>
+    <a href="#coups-de-coeur">Nos univers</a>
+  </nav>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="hero-kicker">✦ BIENVENUE CHEZ COLIVRER</div>
+        <h1>Vos envies.<br><span>Votre univers.</span><br>Votre Colivrer.</h1>
+        <p>
+          Du ménage aux mangas, des instruments aux jeux de construction,
+          découvrez une boutique pensée pour toutes vos envies.
+        </p>
+        <div class="hero-actions">
+          <button class="button-primary" id="heroShop">
+            Explorer la boutique <span>↗</span>
+          </button>
+          <div class="hero-note">✓ Une sélection pensée pour vous</div>
+        </div>
+        <div class="hero-stats">
+          <div><strong>8 univers</strong><small>à découvrir</small></div>
+          <div><strong>32 produits</strong><small>dans la sélection</small></div>
+          <div><strong>100 % plaisir</strong><small>au quotidien</small></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-card art-card-main">
+          <span class="art-emoji">🛍️</span>
+          <strong>Votre shopping</strong>
+          <small>commence ici</small>
+        </div>
+        <div class="art-card art-card-top">
+          <span>✨</span>
+          <div><strong>Les pépites</strong><small>du moment</small></div>
+        </div>
+        <div class="art-card art-card-bottom">
+          <span>🏠</span>
+          <div><strong>Maison & passion</strong><small>tout au même endroit</small></div>
+        </div>
+        <span class="floating float-star">✦</span>
+        <span class="floating float-dot">●</span>
+        <span class="floating float-spark">✧</span>
+      </div>
+    </section>
+
+    <section class="benefits" id="avantages">
+      <article>
+        <span class="benefit-icon">🚚</span>
+        <div><strong>Livraison offerte</strong><small>Dès 50 € d’achat (démo)</small></div>
+      </article>
+      <article>
+        <span class="benefit-icon">🔐</span>
+        <div><strong>Navigation sereine</strong><small>Une expérience simple</small></div>
+      </article>
+      <article>
+        <span class="benefit-icon">💬</span>
+        <div><strong>À votre écoute</strong><small>Un service proche de vous</small></div>
+      </article>
+      <article>
+        <span class="benefit-icon">🎁</span>
+        <div><strong>Des idées cadeaux</strong><small>Pour toutes les passions</small></div>
+      </article>
+    </section>
+
+    <section class="category-section" id="coups-de-coeur">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">FAITES VOTRE CHOIX</span>
+          <h2>Un univers pour chaque envie</h2>
+          <p>Explorez nos catégories et trouvez votre prochaine pépite.</p>
+        </div>
+      </div>
+
+      <div class="category-cards">
+        <button class="category-card category-home" data-jump="Maison">
+          <span class="category-emoji">🧼</span>
+          <span class="category-label">MAISON & MÉNAGE</span>
+          <strong>Un quotidien plus facile</strong>
+          <span class="category-link">Explorer ↗</span>
+        </button>
+        <button class="category-card category-manga" data-jump="Manga">
+          <span class="category-emoji">📚</span>
+          <span class="category-label">MANGA & CULTURE</span>
+          <strong>Fairy Tail et vos héros préférés</strong>
+          <span class="category-link">Explorer ↗</span>
+        </button>
+        <button class="category-card category-tech" data-jump="Tech">
+          <span class="category-emoji">🎧</span>
+          <span class="category-label">HIGH-TECH</span>
+          <strong>La technologie au quotidien</strong>
+          <span class="category-link">Explorer ↗</span>
+        </button>
+        <button class="category-card category-accessories" data-jump="Accessoires">
+          <span class="category-emoji">🎒</span>
+          <span class="category-label">ACCESSOIRES</span>
+          <strong>Les détails qui changent tout</strong>
+          <span class="category-link">Explorer ↗</span>
+        </button>
+        <button class="category-card category-music" data-jump="Musique">
+          <span class="category-emoji">🎸</span>
+          <span class="category-label">INSTRUMENTS</span>
+          <strong>Faites vibrer votre passion</strong>
+          <span class="category-link">Explorer ↗</span>
+        </button>
+        <button class="category-card category-toys" data-jump="Jouets">
+          <span class="category-emoji">🧱</span>
+          <span class="category-label">JEUX & CONSTRUCTION</span>
+          <strong>LEGO, Kapla et figurines</strong>
+          <span class="category-link">Explorer ↗</span>
+        </button>
+        <button class="category-card category-computing" data-jump="Informatique">
+          <span class="category-emoji">💻</span>
+          <span class="category-label">INFORMATIQUE</span>
+          <strong>Le numérique à portée de main</strong>
+          <span class="category-link">Explorer ↗</span>
+        </button>
+        <button class="category-card category-furniture" data-jump="Mobilier">
+          <span class="category-emoji">🗄️</span>
+          <span class="category-label">MOBILIER</span>
+          <strong>Armoires et rangement</strong>
+          <span class="category-link">Explorer ↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="catalogue-section" id="catalogue">
+      <div class="section-heading catalogue-heading">
+        <div>
+          <span class="section-kicker">LA SÉLECTION COLIVRER</span>
+          <h2>Les trouvailles du moment <span class="heading-spark">✦</span></h2>
+          <p>Des produits pratiques, des passions à collectionner et de bonnes idées.</p>
+        </div>
+        <div class="sort-wrap">
+          <label for="sortSelect">Trier par</label>
+          <select id="sortSelect">
+            <option value="featured">À découvrir</option>
+            <option value="price-asc">Prix croissant</option>
+            <option value="price-desc">Prix décroissant</option>
+            <option value="name">Nom A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="catalogue-controls">
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="Tous">Tout voir <span>32</span></button>
+          <button class="filter" data-category="Maison">Maison & ménage</button>
+          <button class="filter" data-category="Manga">Manga</button>
+          <button class="filter" data-category="Tech">High-tech</button>
+          <button class="filter" data-category="Accessoires">Accessoires</button>
+          <button class="filter" data-category="Musique">Instruments</button>
+          <button class="filter" data-category="Jouets">LEGO & construction</button>
+          <button class="filter" data-category="Informatique">Ordinateurs</button>
+          <button class="filter" data-category="Mobilier">Mobilier</button>
+        </div>
+        <div class="result-count" id="resultCount">32 produits</div>
+      </div>
+
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="catalogue-bottom">
+        ✦ Vous êtes au bon endroit pour vos prochaines découvertes. ✦
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-icon">✉</div>
+      <div>
+        <span class="section-kicker">RESTONS EN CONTACT</span>
+        <h2>Les nouveautés vous attendent.</h2>
+        <p>La newsletter sera bientôt disponible dans la boutique.</p>
+      </div>
+      <span class="newsletter-decoration">✦</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#">
+          <span class="brand-mark">c.</span>
+          <span>coli<span class="brand-accent">vrer</span><small>LE SHOPPING, AUTREMENT</small></span>
+        </a>
+        <p>Le quotidien, les passions et les petites découvertes réunis dans une seule boutique.</p>
+      </div>
+      <div class="footer-column">
+        <strong>La boutique</strong>
+        <a href="#catalogue">Tous les produits</a>
+        <a href="#catalogue" data-nav="Maison">Maison & ménage</a>
+        <a href="#catalogue" data-nav="Manga">Mangas</a>
+        <a href="#catalogue" data-nav="Musique">Instruments</a>
+        <a href="#catalogue" data-nav="Jouets">LEGO & construction</a>
+        <a href="#catalogue" data-nav="Informatique">Ordinateurs</a>
+        <a href="#catalogue" data-nav="Mobilier">Mobilier</a>
+      </div>
+      <div class="footer-column">
+        <strong>Colivrer</strong>
+        <a href="#coups-de-coeur">Nos univers</a>
+        <a href="#avantages">Nos engagements</a>
+        <a href="#mentions">Mentions de démonstration</a>
+      </div>
+      <div class="footer-column footer-contact">
+        <strong>Besoin d’aide ?</strong>
+        <p>Notre espace contact sera ajouté lors de la mise en ligne.</p>
+        <span>✉ bonjour@colivrer.example</span>
+      </div>
+    </div>
+    <div class="footer-bottom" id="mentions">
+      <span>© 2026 Colivrer — Maquette de démonstration</span>
+      <span>Prix indicatifs · Aucun paiement réel · Marques citées à titre illustratif</span>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="drawer" aria-label="Votre panier" role="dialog" aria-modal="true">
+    <div class="drawer-head">
+      <div>
+        <span class="section-kicker">VOTRE SÉLECTION</span>
+        <h2>Mon panier <span id="cartTitleCount">(0)</span></h2>
+      </div>
+      <button class="close-button" id="closeCart" aria-label="Fermer le panier">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom">
+      <div class="shipping-progress">
+        <div class="progress-copy" id="shippingText">Ajoutez un produit pour commencer.</div>
+        <div class="progress-track"><span id="shippingProgress"></span></div>
+      </div>
+      <div class="subtotal"><span>Sous-total</span><strong id="subtotal">0,00 €</strong></div>
+      <div class="cart-disclaimer">Les frais de livraison définitifs seront calculés à l’étape de commande.</div>
+      <button class="checkout" id="checkout">Continuer <span>→</span></button>
+      <p class="fineprint">Démo uniquement : aucun paiement réel ne sera effectué.</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <section class="info-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-button modal-close" id="closeModal" aria-label="Fermer">×</button>
+      <div class="modal-symbol">✦</div>
+      <h2 id="modalTitle">Bienvenue chez Colivrer</h2>
+      <p id="modalMessage">Cette fonctionnalité sera disponible lors de la mise en ligne de la boutique.</p>
+      <button class="button-primary" id="modalOk">Compris</button>
+    </section>
+  </div>
+
+</body>
+</html>
